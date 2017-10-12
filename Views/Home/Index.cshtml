@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <div class="Wrapper">
+        <p>Random Passcode (passcode #@ViewBag.Count)</p>
+        <div class="BoxWithBorder">
+           @ViewBag.RndString
+        </div>
+        <form action="/" action="get">
+            <button name="submit">Generate</button>
+        </form>
+    </div>
